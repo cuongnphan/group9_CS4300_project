@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Uptown Cafe</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/shop.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <a href="index.html">
+            <h2 class="brand-title"><img src="images/logo1.jpg" style="float:left" ;> </h2>
+        </a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+    </script>
+
+
+
+    <section class="products" id="products">
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="image">
+                    <img src="images/Columbia-product.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="shop-item-title">Columbia fresh coffee</h3>
+                    <div class="price">$15.99 </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="image">
+                    <img src="images/Nicaragua-product.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="shop-item-title">Nicaragua fresh coffee</h3>
+                    <div class="price">$15.99 </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="image">
+                    <img src="images/Peru-product.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="shop-item-title">Peru fresh coffee</h3>
+                    <div class="price">$15.99 </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="image">
+                    <img src="images/vietnam_product.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="shop-item-title">Vietnam fresh coffee</h3>
+                    <div class="price">$15.99 </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="image">
+                    <img src="images/mug_product.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="shop-item-title">Our special mug</h3>
+                    <div class="price">$15.99 </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+
+                <div class="image">
+                    <img src="images/flask_product.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="shop-item-title">Our special flask</h3>
+                    <div class="price">$15.99 </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!--cart-->
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/vietnam_product.png" width="100" height="100">
+                    <span class="cart-item-title">Vietnam fresh coffee</span>
+                </div>
+                <span class="cart-price cart-column">$15.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/img17.jpg" width="100" height="100">
+                    <span class="cart-item-title">Plain (Small) Coffeee</span>
+                </div>
+                <span class="cart-price cart-column">$3.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/img30.jpg" width="100" height="100">
+                    <span class="cart-item-title">Bagels</span>
+                </div>
+                <span class="cart-price cart-column">$1.25</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/Columbia-product.png" width="100" height="100">
+                    <span class="cart-item-title">Columbia fresh coffee</span>
+                </div>
+                <span class="cart-price cart-column">$15.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$37.22</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--Footer for subpage -->
+    <footer class="footer section">
+        <div class="footer-container container d-grid">
+
+            <div class="company-data">
+                <a href="./index.html">
+                    <h2 class="logo">cafe</h2>
+                </a>
+                <p class="company-description">Please visit our social media sites to explore more about our cafe.</p>
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="https://www.instagram.com/" class="list-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.facebook.com/" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://twitter.com/" class="list-link"><i class="ri-twitter-line"></i></a>
+                    </li>
+
+                </ul>
+                <span class="copyright-notice">&copy;2022 Cafe  <br />Tvisha Patel <br> Cuong Phan<br>  Aziz<br>  Brad Pham <br> All rights reserved.</span>
+            </div>
+
+
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="index.html" class="list-link"> MainHome</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="blog.html" class="list-link">Blog</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Menu</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="shop.html" class="list-link">Shop</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="contact.html" class="list-link">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>
